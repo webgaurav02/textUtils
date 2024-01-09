@@ -76,12 +76,14 @@ const Textbox = (props) => {
                             {(text.replace(/<br>/g, "").trim().length)} characters, {((text.trim().length) === 0) ? 0 : text.replace(/<br>/g, " ").trim().split(/\s+/).length} words
                         </p>
                     </div>
-                    <button type="submit" className="btn btn-primary mx-2 ml-0" onClick={setUpper}>Uppercase</button>
-                    <button type="submit" className="btn btn-primary mx-2" onClick={setLower}>Lowercase</button>
-                    <button type="submit" className="btn btn-primary mx-2" onClick={setTitle}>Titlecase</button>
-                    <button type="submit" className="btn btn-primary mx-2" onClick={copyText}>Copy</button>
-                    <button type="submit" className="btn btn-outline-primary mx-2" onClick={resetText}>Reset</button>
-                    <button type="submit" className="btn btn-outline-danger mx-2" onClick={clearText}>Clear</button>
+                    <div className="button-cont">
+                        <button type="submit" className="btn btn-primary mx-2 left-btn" onClick={setUpper}>Uppercase</button>
+                        <button type="submit" className="btn btn-primary mx-2" onClick={setLower}>Lowercase</button>
+                        <button type="submit" className="btn btn-primary mx-2" onClick={setTitle}>Titlecase</button>
+                        <button type="submit" className="btn btn-primary mx-2" onClick={copyText}>Copy</button>
+                        <button type="submit" className="btn btn-outline-primary mx-2" onClick={resetText}>Reset</button>
+                        <button type="submit" className="btn btn-outline-danger mx-2" onClick={clearText}>Clear</button>
+                    </div>
                 </div>
             </form>
             <div className="p-5">

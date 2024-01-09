@@ -13,6 +13,10 @@ form {
   transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
+.left-btn{
+  margin-left: 0 !important;
+}
+
 .cont-60 {
   text-align: left;
   width: 60%;
@@ -40,4 +44,19 @@ form {
   box-shadow: 1px 2px 10px -3px rgb(0 0 0 / 70%);
   -webkit-box-shadow: 1px 2px 10px -3px rgb(0 0 0 / 70%);
   -moz-box-shadow: 1px 2px 10px -3px rgb(0 0 0 / 70%);
+}
+
+@media only screen and (max-width: 767px) {
+  .button-cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-btn{
+    margin-left: 4% !important;
+  }
+
+  button{
+    margin: 10px 0;
+  }
 }
